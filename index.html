@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Uuid by gokyle</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Uuid</h1>
+        <p>RFC 4122 UUID generator in Go.</p>
+
+        <p class="view"><a href="https://github.com/gokyle/uuid">View the Project on GitHub <small>gokyle/uuid</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/gokyle/uuid/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/gokyle/uuid/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/gokyle/uuid">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p>package <code>uuid</code> provides an RFC 4122 UUID generator.</p>
+
+<p>Each supported UUID version provides two functions: <code>GenerateVn</code>, where n
+is the version number, and <code>GenerateVnString</code>. The <code>GenerateVn</code> function
+returns the UUID as a <code>Uuid</code> type (currently implemented as a <code>[]byte</code>), and
+the <code>GenerateVnString</code> returns the UUID as a <code>string</code>.</p>
+
+<p>Tests for each exported function are also provided, which include checks
+to ensure that generated UUIDs are in the proper format.</p>
+
+<h2>FUNCTIONS</h2>
+
+<div class="highlight"><pre><span class="c1">// GenerateV4String returns a version 4 UUID as a string.</span>
+<span class="k">func</span> <span class="n">GenerateV4String</span><span class="p">()</span> <span class="p">(</span><span class="n">u</span> <span class="nb">string</span><span class="p">,</span> <span class="n">err</span> <span class="n">error</span><span class="p">)</span>
+<span class="c1">// GenerateV4 returns a version 4 UUID as a byte slice.</span>
+<span class="k">func</span> <span class="n">GenerateV4</span><span class="p">()</span> <span class="p">(</span><span class="n">u</span> <span class="n">Uuid</span><span class="p">,</span> <span class="n">err</span> <span class="n">error</span><span class="p">)</span>
+</pre></div>
+
+<h2>TYPES</h2>
+
+<div class="highlight"><pre><span class="k">type</span> <span class="n">Uuid</span> <span class="p">[]</span><span class="nb">byte</span>
+</pre></div>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/gokyle">gokyle</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
