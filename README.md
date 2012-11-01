@@ -1,9 +1,9 @@
-package uuid provides an RFC 4122 UUID generator.
+package `uuid` provides an RFC 4122 UUID generator.
 
-Each supported UUID version provides two functions: GenerateVn, where n
-is the version number, and GenerateVnString. The GenerateVn function
-returns the UUID as a Uuid type (currently implemented as a []byte), and
-the GenerateVnString returns the UUID as a string.
+Each supported UUID version provides two functions: `GenerateVn`, where n
+is the version number, and `GenerateVnString`. The `GenerateVn` function
+returns the UUID as a `Uuid` type (currently implemented as a `[]byte`), and
+the `GenerateVnString` returns the UUID as a `string`.
 
 Tests for each exported function are also provided, which include checks
 to ensure that generated UUIDs are in the proper format.
